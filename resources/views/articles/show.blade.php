@@ -10,4 +10,6 @@
 			{{ $article->bosy }}
 		</div>
 	</article>
-@endsection
+
+	{!! link_to(action('ArticlesController@edit', [$article->id]), '編集', ['class' => 'btn btn-primary']) !!}
+@stop
